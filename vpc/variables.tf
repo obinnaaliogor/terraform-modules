@@ -1,5 +1,5 @@
 # Vpc Variables
-variable "cidr_block" {}
+variable "vpc_cidr" {}
 variable "project_name" {}
 variable "environment" {}
 variable "region" {}
