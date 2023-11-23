@@ -75,7 +75,7 @@ route_table_id = aws_route_table.public_route_table.id
 resource "aws_subnet" "private_app_subnet_az1" {
 vpc_id = aws_vpc.vpc.id
 cidr_block= var.private_app_subnet_az1_cidr
-availability_zone = data.aws_availability_zones.available_zones.id[0]
+availability_zone = data.aws_availability_zones.available_zones.names[0]
 map_public_ip_on_launch = false
 
 tags = {
