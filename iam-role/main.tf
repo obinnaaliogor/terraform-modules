@@ -60,6 +60,6 @@ resource "aws_iam_role" "ecs_task_execution_role" {
 
 # attach ecs task execution policy to the iam role
 resource "aws_iam_role_policy_attachment" "ecs_task_execution_role" {
-  role       = aws_iam_role.ecs_task_execution_role.id
+  role       = aws_iam_role.ecs_task_execution_role.name
   policy_arn = data.aws_iam_policy_document.ecs_task_execution_policy_document.arn
 }
