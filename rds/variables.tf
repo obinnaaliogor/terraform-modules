@@ -10,5 +10,4 @@ variable "instance_class" {}
 variable "multi_az" {}
 variable "database_security_group_id" {}
 variable "identifier" {}
-variable "snapshot_identifier" {}
 variable "availability_zone_1" {}
