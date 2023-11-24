@@ -12,7 +12,7 @@ resource "aws_eip" "eip2" {
 domain = "vpc"
 
 tags = {
-Name = "${var.project_name}-${var.environment}"
+Name = "${var.project_name}-${var.environment}-eip2"
 }
 }
 
